@@ -38,9 +38,6 @@ store.getState()
 //lo podemos pasar directamente
 //store.dispatch({type: "@counter/incremented"})
 
-
-
-
 //newState 
 //counterReducer(0, actionIncremented) 
 //counterReducer(1, actionDecremented)
@@ -72,7 +69,7 @@ counterReducer(3, actionReset)
 estos couter reducer que estamos haciendo aquí, las acciones si que las necesitamos normalmente estan deparadas en otros archivos, esto lo podriamos hacer directamente, lo aplicamos en una const para que sea mas fácil de leer una vez le ha llegado esto como podriamos saber el state de mi App. una vez 
 le ha llagado esto store.dispatch(actionIncremented) 
 como sabemos el state de nuestra App
-store.getState() >  Por que ha dado un NaN si nos fijamos bien el switch el state no esta definido el primer state con el que empezamos nuestra app no esta en ningun sitio, no lo estamos encontrando, ¿ qu´ pasa ahora ? cunado intenta incremenetar estra a state del counterReducer pero el state no se lo estamos pasando, En ningun momento tiene un state inicial, se lo tenemos que indicar si no tiene un state inicial vamos a decirle que sea 0, si no le pasamos el state inicial es 0 lo aumentamos luego llamamos strore.getState()
+store.getState() >  Por que ha dado un NaN si nos fijamos bien el switch el state no esta definido el primer state con el que empezamos nuestra app no esta en ningun sitio, no lo estamos encontrando, ¿ qué pasa ahora ? cunado intenta incremenetar estra a state del counterReducer pero el state no se lo estamos pasando, En ningun momento tiene un state inicial, se lo tenemos que indicar si no tiene un state inicial vamos a decirle que sea 0, si no le pasamos el state inicial es 0 lo aumentamos luego llamamos strore.getState()
 es 1 > 
 */
 
