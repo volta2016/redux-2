@@ -1,8 +1,8 @@
-//al reducer lo que le llega es el state una acción, y al final
+//al reducer lo que le llega es el state y una acción,  al final
 //lo que tiene que retornar o expulsar es un newState
 //es tomar algo de entrada y convertilo en otra cosa
-//toma tienes esta estado tambíen este esta acción(evento) dime cual es el nuevo
-//estado de mi aplicación.
+//toma tienes esta state tambíén este esta acción(evento) dime cual es el nuevo
+//state de mi aplicación.
 //Es una maquina de generar estados > el reducer
 //const reducer = (state, action) => newState
 
