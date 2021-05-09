@@ -2,8 +2,8 @@
 
 
 
-const counterReducer = (state,action) => {
-  switch(action.type)  {
+const counterReducer = (state, action) => {
+  switch(action.type) {
     case "@counter/incremented":
       return state + 1
     case "@counter/decremented":
@@ -14,7 +14,7 @@ const counterReducer = (state,action) => {
 }
 
 const actionIncremented = {
-  type: "@counter/incremented"
+  type: "@counter/incremented",
 }
 
 const actionDecremented = {
@@ -27,6 +27,7 @@ const actionReset = {
 
 counterReducer(0, actionIncremented)
 counterReducer(1, actionDecremented)
-counterReducer(3, actionReset)
+counterReducer(20, actionReset)
+
 
 
