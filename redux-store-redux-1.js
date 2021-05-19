@@ -1,6 +1,7 @@
 import { createStore } from "redux";
 
 // podemos pasar el state directamente
+//es bueno definir el default por si tenemos una action aquí no esta
 const counterReducer = (state = 0, action) => {
 	switch (action.type) {
 		case "@counter/incremented":
@@ -9,6 +10,8 @@ const counterReducer = (state = 0, action) => {
 			return state - 1;
 		case "@counter/reset":
 			return 0;
+		default:
+			return;
 	}
 };
 
