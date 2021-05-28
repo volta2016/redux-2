@@ -29,7 +29,7 @@ const store = createStore(counter);
 const render = () => {
 	ReactDOM.render(
 		<Counter
-			value={store.getState()}
+			value={store.getState()} //get state
 			onIncrement={() =>
 				store.dispatch({
 					type: "INCREMENT",
