@@ -34,6 +34,7 @@ const removeCounter = (list, index) => {
 const incrementedCounter = (list, index) => {
 	return [...list.slice(0, index), list[index] + 1, ...list.slice(index + 1)];
 };
+//estamos armando el array por parte [0,1, 2 ] con spread
 
 // test
 
